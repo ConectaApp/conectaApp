@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+  <title>Conecta App</title>
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/washington.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logoStandford32.ico">
+  <link rel="apple-touch-icon" href="images/logoStandford32.ico">
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+  <script src="libs/jquery/jquery.min.js"></script>
+  <script src="libs/framework/modernizr.js"></script>
+  <script src="libs/framework/index.js"></script>
+  <script src="libs/framework/webfont.js"></script>
+  <script src="libs/angular/angular.min.js"></script>
+  <script src="libs/angular/angular-resource.min.js"></script>
+  <script src="libs/angular/angular-route.min.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+
+
+  <script src="js/server.js"></script>
+  <script src="js/controller/app.js"></script>
+  <script src="js/controller/loginController.js"></script>
+  <script src="js/controller/aboutUsController.js"></script>
+  <script src="js/controller/categoryController.js"></script>
+  <script src="js/controller/chatController.js"></script>
+  <script src="js/controller/forgotController.js"></script>
+  <script src="js/controller/introController.js"></script>
+  <script src="js/controller/mainController.js"></script>
+  <script src="js/controller/mapsController.js"></script>
+  <script src="js/controller/messagesController.js"></script>
+  <script src="js/controller/myMessagesController.js"></script>
+  <script src="js/controller/notifyController.js"></script>
+  <script src="js/controller/sendNotifyController.js"></script>
+  <script src="js/controller/settingsController.js"></script>
+  <script src="js/controller/signUpController.js"></script>
+  <script src="js/controller/termsController.js"></script>
+</head>
+<body ng-app="appConecta">
+  <div ng-view></div>
+</body>
+</html>

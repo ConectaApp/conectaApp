@@ -1,0 +1,64 @@
+<section class="w-section mobile-wrapper">
+  <div class="page-content" id="main-stack" data-scroll="0">
+    <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
+      <div class="w-container">
+        <div class="wrapper-mask" data-ix="menu-mask"></div>
+        <div class="navbar-title">Cadastre-se no Conecta!</div>
+        <a class="w-inline-block navbar-button" href="login.html" data-load="1">
+          <div class="navbar-button-icon icon ion-ios-close-empty"></div>
+        </a>
+      </div>
+    </div>
+    <div class="body padding">
+      <div class="logo-login smaller"></div>
+      <div class="bottom-section padding">
+        <div class="w-form">
+
+          <form id="submit-form" name="cadForm" data-name="Email Form" action="#" novalidate>
+            <div>
+              <label class="label-form" for="full-name-field">NOME COMPLETO</label>
+              <input class="w-input input-form ng-pristine" ng-model="cadNome" id="name-field" type="text" name="cadNome" data-name="full-name" required>
+              <div class="separator-fields"></div>
+            </div>
+            <div>
+              <label class="label-form" for="email-field">LOGIN</label>
+              <input class="w-input input-form" ng-model="cadLogin" id="login-field" type="login" name="cadLogin" data-name="login" required>
+              <div class="separator-fields"></div>
+            </div>
+            <div>
+              <label class="label-form" for="password-ield">SENHA</label>
+              <input class="w-input input-form" ng-model="cadPass" id="password-ield" type="password" name="cadPass" data-name="password" required>
+              <div class="separator-fields"></div>
+
+            </div>
+            <!-- <div>
+              <label class="label-form" for="birthday-field">DATA DE NASCIMENTO</label>
+              <input class="w-input input-form" id="birthday-field" type="text" name="birthday" data-name="birthday" required="required">
+            </div> -->
+            <div class="separator-button-input"></div>
+            <button class="w-button action-button" ng-click="cadastrar()"  type="submit" value="CADASTRAR" data-wait="Please wait...">CADASTRAR</button>
+            <!-- <input class="w-button action-button" ng-click="cadastrar()"  ng-disabled="cadForm.$invalid" type="submit" value="CADASTRAR" data-wait="Please wait..."> -->
+            <div class="separator-button"></div><a class="link-upper" href="login.html" data-load="1">JÁ POSSUI UMA CONTA? <strong class="b-link">ENTRE</strong></a>
+          </form>
+          <div class="w-form-done" style='text-align: center'>
+              <p>Seu cadastro foi realizado com sucesso! Você será redirecionado para a tela de Login</p>
+            </div>
+            <div class="w-form-fail" style='text-align: center'>
+              <p>Ops! Parece que algo deu errado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-content loading-mask" id="new-stack">
+    <div class="loading-icon">
+      <div class="navbar-button-icon icon ion-load-d"></div>
+    </div>
+  </div>
+  <div class="shadow-layer"></div>
+</section>
+<style type="text/css">
+  input.nd-touched.ng-invalid{
+    border-color:#F99;
+  }
+</style>

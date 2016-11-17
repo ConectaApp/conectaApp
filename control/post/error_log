@@ -1,0 +1,31 @@
+[11-Nov-2016 14:33:43] PHP Parse error:  syntax error, unexpected '&' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 10
+[11-Nov-2016 14:34:31] PHP Parse error:  syntax error, unexpected '&' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 10
+[11-Nov-2016 14:35:00] PHP Parse error:  syntax error, unexpected '&' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 10
+[11-Nov-2016 15:09:47] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 35
+[11-Nov-2016 15:09:53] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 35
+[11-Nov-2016 15:09:57] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 35
+[11-Nov-2016 15:10:58] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 35
+[11-Nov-2016 15:11:23] PHP Warning:  require(../dao/ConexaoPDO.class.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 2
+[11-Nov-2016 15:11:23] PHP Warning:  require(../dao/ConexaoPDO.class.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 2
+[11-Nov-2016 15:11:23] PHP Warning:  require(../dao/ConexaoPDO.class.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 2
+[11-Nov-2016 15:11:23] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '../dao/ConexaoPDO.class.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 2
+[11-Nov-2016 15:11:45] PHP Fatal error:  Call to undefined function  connect() in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:13:05] PHP Fatal error:  Call to private method ConexaoPDO::Connect() from context '' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:13:56] PHP Fatal error:  Call to private method ConexaoPDO::Connect() from context '' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:13:58] PHP Fatal error:  Call to private method ConexaoPDO::Connect() from context '' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:14:36] PHP Fatal error:  Call to private method ConexaoPDO::Connect() from context '' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:15:28] PHP Fatal error:  Call to private method ConexaoPDO::Connect() from context '' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:15:30] PHP Fatal error:  Call to private method ConexaoPDO::Connect() from context '' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:17:38] PHP Fatal error:  Call to private method ConexaoPDO::Connect() from context '' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:19:41] PHP Fatal error:  Call to private method ConexaoPDO::Connect() from context '' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:19:44] PHP Fatal error:  Call to private method ConexaoPDO::Connect() from context '' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:19:52] PHP Fatal error:  Call to private method ConexaoPDO::Connect() from context '' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:25:32] PHP Fatal error:  Call to private method ConexaoPDO_C::Connect() from context '' in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 31
+[11-Nov-2016 15:29:47] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000] [1044] Access denied for user 'escol085_tdc'@'localhost' to database 'escol085_conecta'' in /home/escol085/public_html/app/dao/ConexaoPDO.class.php:40
+Stack trace:
+#0 /home/escol085/public_html/app/dao/ConexaoPDO.class.php(40): PDO->__construct('mysql:host=loca...', 'escol085_tdc', 'tiago')
+#1 /home/escol085/public_html/app/dao/ConexaoPDO.class.php(58): ConexaoPDO_C->Connect()
+#2 /home/escol085/public_html/app/control/post/realizaCadastro.php(31): ConexaoPDO_C->getConnection()
+#3 {main}
+  thrown in /home/escol085/public_html/app/dao/ConexaoPDO.class.php on line 40
+[11-Nov-2016 15:33:21] PHP Fatal error:  Class 'ConexaoPDO_C' not found in /home/escol085/public_html/app/control/post/realizaCadastro.php on line 30

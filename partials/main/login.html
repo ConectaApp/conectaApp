@@ -1,0 +1,41 @@
+<section class="w-section mobile-wrapper">
+  <div class="page-content" id="main-stack" data-scroll="0">
+    <div class="w-nav navbar"></div>
+    <div class="body padding">
+      <div class="logo-login"></div>
+     <div class="link-upper"  style="font-size: 15px;width:100%">Não deixe de avisar! </div>
+      <div class="bottom-section padding">
+        <div class="w-form">
+          <form id="form" name="loginForm" >
+            <div>
+              <label class="label-form" for="email-field">LOGIN</label>
+              <input class="w-input input-form" ng-model="getLogin" id="entraLogin" type="text" name="getLogin" data-name="email" required="required">
+              <div class="separator-fields"></div>
+            </div>
+            <div>
+              <label class="label-form" for="email">SENHA</label>
+              <div class="w-clearfix block-input-combined">
+                <input class="w-input input-form left" ng-model="getPass" id="entraSenha" type="password" name="getPass" data-name="password" required="required">
+                  <a class="right-input-link" href="forgot.html" data-load="1">Esqueci a Senha</a>
+              </div>
+              <div class="separator-button-input"></div>
+            </div>
+            <!-- <input class="w-button action-button" ng-click="entrar()" type="submit" value="ENTRAR" data-wait="Please wait..."> -->
+            <button class="w-button action-button" ng-click="entrar()" value="ENTRAR" data-wait="Please wait...">ENTRAR</button>
+            <div class="separator-button"></div><a class="link-upper" href="#/signup" data-load="1">Ainda não tem uma conta? <strong class="b-link">CADASTRE-SE</strong></a>
+          </form>
+          <div class="w-form-fail"  style="text-align:center">
+            <p>Erro! Login ou Senha inexistentes!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-content loading-mask" id="new-stack">
+    <div class="loading-icon">
+      <div class="navbar-button-icon icon ion-load-d"></div>
+    </div>
+  </div>
+  <div class="shadow-layer"></div>
+</section>
+

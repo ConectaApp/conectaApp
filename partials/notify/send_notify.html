@@ -1,0 +1,141 @@
+<section class="w-section mobile-wrapper">
+  <div class="page-content" id="main-stack">
+    <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
+      <div class="w-container">
+        <nav class="w-nav-menu nav-menu" role="navigation">
+          <div ng-include="'partials/frames/menu.html'">
+          </div>
+        </nav>
+        <div class="wrapper-mask" data-ix="menu-mask"></div>
+        <div class="navbar-title">Enviar Push</div>
+        <div class="w-nav-button navbar-button left" id="menu-button" data-ix="hide-navbar-icons">
+          <div class="navbar-button-icon home-icon">
+            <div class="bar-home-icon"></div>
+            <div class="bar-home-icon"></div>
+            <div class="bar-home-icon"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body padding">
+      <div class="w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" action="#">
+          <div class="separator-fields"></div>
+          <div class="separator-fields"></div>
+          <div class="background-grey"></div>
+          <div class="row-input-list">
+            <label class="label-form" for="title">TÍTULO DA MENSAGEM</label>
+            <input class="w-input input-form in-grey" id="title" type="text" name="title" data-name="title" required="required">
+            <div class="separator-fields"></div>
+          </div>
+          <div class="background-grey last"></div>
+          <div class="row-input-list">
+            <label class="label-form" for="description-2">DESCRIÇÃO</label>
+            <input class="w-input input-form in-grey-last" id="description-2" type="text" name="description" data-name="description" required="required">
+            <div class="separator-fields"></div>
+          </div>
+          <div class="row-input-list">
+            <label class="label-form" for="birthday-field">CATEGORIA A ENVIAR</label>
+            <!-- <input class="w-input input-form" id="birthday-field" type="text" name="birthday" data-name="birthday" required="required"> -->
+            <select class="w-input input-form in-grey-last" id="description-2" type="text" name="description" data-name="description" required="required">
+              <OPTION></OPTION>
+            </select>
+            <div class="separator-fields"></div>
+          </div>
+          <div class="row-input-list">
+            <label class="label-form" for="birthday-field">SUB-CATEGORIA</label>
+            <!-- <input class="w-input input-form" id="birthday-field" type="text" name="birthday" data-name="birthday" required="required"> -->
+            <select class="w-input input-form in-grey-last" id="description-2" type="text" name="description" data-name="description" required="required">
+              <OPTION></OPTION>
+            </select>
+            <div class="separator-fields"></div>
+          </div>
+          <!-- <div class="w-clearfix">
+            <div class="row-input-list w50 left">
+              <label class="label-form" for="birthday-field">FROM</label>
+              <input class="w-input input-form" id="birthday-field" type="text" name="birthday" data-name="birthday" required="required">
+              <div class="separator-fields"></div>
+            </div>
+            <div class="row-input-list w50">
+              <label class="label-form" for="birthday-field">TO</label>
+              <input class="w-input input-form" id="birthday-field" type="text" name="birthday" data-name="birthday" required="required">
+              <div class="separator-fields"></div>
+            </div>
+          </div> -->
+          <div class="row-input-list">
+            <label class="label-form" for="birthday-field">LOCALIZAÇÃO</label>
+            <div class="block-input-combined">
+              <input class="w-input input-form left" id="location" type="text" name="location" data-name="location" required="required">
+              <a class="w-inline-block right-input-icon color" href="#">
+                <div class="icon ion-ios-location"></div>
+              </a>
+            </div>
+            <div class="separator-fields"></div>
+          </div>
+          <div class="row-input-list">
+            <div class="w-clearfix input-form one-line">
+              <label class="label-form middle" for="email">PRIORIDADE</label>
+              <div class="w-clearfix radios-container">
+                <div class="w-radio w-clearfix radio-button">
+                  <div class="radio-bullet-replacement"></div>
+                  <input class="w-radio-input radio-bullet" id="node-9" type="radio" name="Radio3" value="2" data-name="Radio3">
+                  <label class="w-form-label" for="node-9">ALTA</label>
+                </div>
+                <!-- <div class="w-radio w-clearfix radio-button">
+                  <div class="radio-bullet-replacement checked"></div>
+                  <input class="w-radio-input radio-bullet" id="node-6" type="radio" name="Radio3" value="1" data-name="Radio3">
+                  <label class="w-form-label" for="node-6">MÉDIA</label>
+                </div> -->
+                <div class="w-radio w-clearfix radio-button">
+                  <div class="radio-bullet-replacement"></div>
+                  <input class="w-radio-input radio-bullet" id="node-5" type="radio" name="Radio3" value="0" data-name="Radio3">
+                  <label class="w-form-label" for="node-5">BAIXA</label>
+                </div>
+              </div>
+            </div>
+            <div class="separator-fields"></div>
+          </div>
+          <div class="row-input-list">
+            <div class="w-clearfix input-form one-line">
+              <label class="label-form middle" for="email">SALVAR PUSH</label>
+              <div class="w-clearfix radios-container">
+                <div class="w-checkbox w-clearfix checkbox-field">
+                  <div class="checkbox-handle"></div>
+                  <input class="w-checkbox-input checkbox-input" id="checkbox" type="checkbox" name="checkbox" data-name="Checkbox">
+                  <label class="w-form-label checkbox-label" for="checkbox"></label>
+                </div>
+              </div>
+            </div>
+            <div class="separator-fields"></div>
+          </div>
+          <div class="row-input-list">
+            <div class="w-clearfix input-form one-line last">
+              <label class="label-form middle" for="email">REPETIR POR ENVIO AUTOMATICO</label>
+              <div class="w-clearfix radios-container">
+                <div class="w-checkbox w-clearfix checkbox-field">
+                  <div class="checkbox-handle"></div>
+                  <input class="w-checkbox-input checkbox-input" id="checkbox-2" type="checkbox" name="checkbox-2" data-name="Checkbox 2">
+                  <label class="w-form-label checkbox-label" for="checkbox-2"></label>
+                </div>
+              </div>
+            </div>
+            <div class="separator-fields"></div>
+          </div>
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-content loading-mask" id="new-stack">
+    <div class="loading-icon">
+      <div class="navbar-button-icon icon ion-load-d"></div>
+    </div>
+  </div>
+  <div class="shadow-layer"></div>
+</section>
+
